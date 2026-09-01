@@ -22,4 +22,4 @@ The framework uses a vision-language model to infer an object goal from an impli
 
 ## Resources
 
-The code and benchmark are linked above. This page can later be expanded with a teaser figure, results, video, BibTeX, and supplementary material without changing the Publications index.
+The code and benchmark are linked above.

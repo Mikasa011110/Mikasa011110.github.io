@@ -103,14 +103,20 @@ layout: default
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="outside-research">
   <div class="container interests-row">
     <div>
       <p class="section-kicker">Personal</p>
       <h2>{{ t.sections.interests }}</h2>
     </div>
     <div class="hobby-list">
-      {% for item in p.interests %}<span>{{ item }}</span>{% endfor %}
+      {% for item in p.interests %}
+        {% if item == 'Volleyball' %}
+        <a href="{{ '/volleyball/' | relative_url }}" aria-label="Learn more about my interest in volleyball">{{ item }} <span aria-hidden="true">↗</span></a>
+        {% else %}
+        <span>{{ item }}</span>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

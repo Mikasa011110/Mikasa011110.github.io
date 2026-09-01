@@ -16,5 +16,3 @@ code_url: "#"
 ## Overview
 
 This project investigates numerical perception in vision-language models from a cognitively inspired perspective. My contribution forms part of a broader collaborative effort within the research group.
-
-Add a public paper link, project page, code repository, or poster here when available.

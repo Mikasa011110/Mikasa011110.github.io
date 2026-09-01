@@ -374,6 +374,16 @@ button { font: inherit; }
 .vb-stage-video .vb-stage-media video {
   aspect-ratio: 9 / 16;
 }
+
+.vb-stage-xjtlu .vb-stage-media img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #fff;
+}
+.vb-stage-video .vb-stage-media video {
+  pointer-events: auto;
+}
+
 .vb-stage-reverse .vb-stage-media { grid-column: 3; }
 .vb-stage-reverse .vb-stage-content { grid-column: 2; grid-row: 1; }
 .vb-period {

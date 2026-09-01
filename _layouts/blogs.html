@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="section-kicker">Notes & Activities</p>
+    <h1>{{ page.title }}</h1>
+    <p class="page-lead">Research notes, lab activities, conferences, and small moments worth remembering.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container narrow">
+    {% assign posts = site.pages | where: "content_type", "blog" | sort: "date" | reverse %}
+    <div class="blog-list">
+      {% for post in posts %}{% include blog-card.html post=post %}{% endfor %}
+    </div>
+  </div>
+</section>

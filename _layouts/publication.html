@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="publication-page">
+  <section class="page-hero publication-hero">
+    <div class="container narrow">
+      <a class="back-link" href="{{ '/publications/' | relative_url }}">← Publications</a>
+      <div class="publication-meta-row detail-meta">
+        <span class="publication-year">{{ page.year }}</span>
+        {% if page.status %}<span class="status-badge">{{ page.status }}</span>{% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+      <p class="publication-authors detail-authors">{{ page.authors }}</p>
+      <p class="publication-venue detail-venue">{{ page.venue }}</p>
+      <div class="social-actions detail-actions">
+        {% if page.paper_url and page.paper_url != '#' %}<a class="button button-primary" href="{{ page.paper_url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        {% if page.code_url and page.code_url != '#' %}<a class="button button-secondary" href="{{ page.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if page.benchmark_url and page.benchmark_url != '#' %}<a class="button button-secondary" href="{{ page.benchmark_url }}" target="_blank" rel="noopener">Benchmark</a>{% endif %}
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container narrow prose publication-prose">{{ content }}</div>
+  </section>
+</article>

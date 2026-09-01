@@ -1,0 +1,116 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+{% assign current_lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[current_lang] %}
+<section class="hero-section">
+  <div class="container hero-grid">
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}">
+      <div class="photo-caption">{{ p.location }}</div>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">{{ p.headline }}</p>
+      <h1>{{ p.name }}</h1>
+      <p class="hero-tagline">{{ p.tagline }}</p>
+      <p class="hero-intro">I am currently completing an MSc in Artificial Intelligence at <strong>The University of Manchester</strong>, following a BSc in Computer Science at the <strong>University of Liverpool</strong>. My work sits at the intersection of robotics, embodied intelligence, and learning.</p>
+      {% include social-buttons.html %}
+      <a class="email-link" href="mailto:{{ p.email }}">{{ p.email }}</a>
+      <div class="phd-notice"><span class="notice-dot"></span><p>{{ p.phd_notice }}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split-section">
+    <div>
+      <p class="section-kicker">Background</p>
+      <h2>{{ t.sections.education }}</h2>
+    </div>
+    <div class="timeline">
+      {% for item in p.education %}
+      <article class="timeline-item">
+        <div class="timeline-date">{{ item.period }}</div>
+        <div>
+          <h3>{{ item.degree }}</h3>
+          <p class="timeline-place">{{ item.institution }} · {{ item.location }}</p>
+          {% if item.note %}<p class="muted">{{ item.note }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tinted">
+  <div class="container research-experience-grid">
+    <div>
+      <p class="section-kicker">CoRoLab</p>
+      <h2>{{ t.sections.research_experience }}</h2>
+    </div>
+    <article class="experience-card">
+      <div class="experience-topline">
+        <span>{{ p.research_experience.period }}</span>
+        <span>{{ p.research_experience.institution }}</span>
+      </div>
+      <h3>{{ p.research_experience.lab }}</h3>
+      <p class="experience-focus">{{ p.research_experience.focus }}</p>
+      <p>{{ p.research_experience.description }}</p>
+      <dl class="mini-facts">
+        <div><dt>Principal Investigator</dt><dd>{{ p.research_experience.pi }}</dd></div>
+        <div><dt>Mentorship</dt><dd>{{ p.research_experience.thanks }}</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">What I work on</p>
+        <h2>{{ t.sections.research_interests }}</h2>
+      </div>
+      <p class="section-lead">My central interest is how robots can build useful representations of the physical world and turn them into reliable actions.</p>
+    </div>
+    <div class="interest-grid">
+      {% for item in p.research_interests %}
+      <article class="interest-card">
+        <span class="card-index">0{{ forloop.index }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <p class="keywords">{{ item.keywords }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tinted">
+  <div class="container">
+    <div class="section-heading compact-heading">
+      <div>
+        <p class="section-kicker">Research output</p>
+        <h2>{{ t.sections.selected_publications }}</h2>
+      </div>
+      <a class="text-arrow" href="{{ '/publications/' | relative_url }}">{{ t.actions.all_publications }} →</a>
+    </div>
+    {% assign pubs = site.pages | where: "content_type", "publication" | sort: "order" %}
+    <div class="publication-list">
+      {% for pub in pubs limit:2 %}{% include publication-card.html pub=pub %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container interests-row">
+    <div>
+      <p class="section-kicker">Personal</p>
+      <h2>{{ t.sections.interests }}</h2>
+    </div>
+    <div class="hobby-list">
+      {% for item in p.interests %}<span>{{ item }}</span>{% endfor %}
+    </div>
+  </div>
+</section>

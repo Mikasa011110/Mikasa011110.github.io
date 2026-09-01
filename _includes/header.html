@@ -1,0 +1,23 @@
+{% assign current_lang = page.lang | default: 'en' %}
+{% assign t = site.data.i18n[current_lang] %}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.profile.name }} home">
+      <span class="brand-mark">KH</span>
+      <span class="brand-name">{{ site.data.profile.name }}</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" data-site-nav>
+      <a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}class="active"{% endif %}>{{ t.nav.home }}</a>
+      <a href="{{ '/publications/' | relative_url }}" {% if page.nav == 'publications' %}class="active"{% endif %}>{{ t.nav.publications }}</a>
+      <a href="{{ '/blogs/' | relative_url }}" {% if page.nav == 'blogs' %}class="active"{% endif %}>{{ t.nav.blogs }}</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" data-theme-toggle>
+        <span aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </div>
+</header>

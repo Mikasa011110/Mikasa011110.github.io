@@ -1,0 +1,16 @@
+nav:
+  home: "Home"
+  publications: "Publications"
+  blogs: "Blogs"
+sections:
+  education: "Education"
+  research_experience: "Research Experience"
+  research_interests: "Research Interests"
+  selected_publications: "Selected Publications"
+  interests: "Outside Research"
+actions:
+  cv: "CV"
+  github: "GitHub"
+  scholar: "Google Scholar"
+  all_publications: "View all publications"
+  all_blogs: "View all blogs"

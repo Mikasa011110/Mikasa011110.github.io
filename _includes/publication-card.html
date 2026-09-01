@@ -1,0 +1,15 @@
+<article class="publication-card">
+  <div class="publication-meta-row">
+    <span class="publication-year">{{ include.pub.year }}</span>
+    {% if include.pub.status %}<span class="status-badge">{{ include.pub.status }}</span>{% endif %}
+  </div>
+  <h3><a href="{{ include.pub.url | relative_url }}">{{ include.pub.title }}</a></h3>
+  <p class="publication-authors">{{ include.pub.authors }}</p>
+  <p class="publication-venue">{{ include.pub.venue }}</p>
+  {% if include.pub.summary %}<p class="publication-summary">{{ include.pub.summary }}</p>{% endif %}
+  <div class="text-links">
+    <a href="{{ include.pub.url | relative_url }}">Details →</a>
+    {% if include.pub.paper_url and include.pub.paper_url != '#' %}<a href="{{ include.pub.paper_url }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
+    {% if include.pub.code_url and include.pub.code_url != '#' %}<a href="{{ include.pub.code_url }}" target="_blank" rel="noopener">Code ↗</a>{% endif %}
+  </div>
+</article>

@@ -1,0 +1,48 @@
+name: "Kanwei He"
+short_name: "Kanwei / Marcus"
+headline: "AI & Robotics Researcher"
+tagline: "I study how robots perceive, reason about, and act in the physical world."
+location: "Nanjing, Jiangsu, China"
+email: "Hekanwei011110@163.com"
+photo: "/assets/images/profile/profile.svg"
+cv: "/assets/files/CV_Chinese.pdf"
+github: "https://github.com/Mikasa011110"
+google_scholar: "https://scholar.google.co.uk/citations?user=hQEDejMAAAAJ&hl=en"
+
+phd_notice: "I am actively looking for PhD opportunities starting in 2027. If you are working on embodied AI, robot learning, or related topics, I would be very happy to connect."
+
+education:
+  - degree: "MSc Artificial Intelligence"
+    institution: "The University of Manchester"
+    period: "2025–2026"
+    location: "Manchester, UK"
+  - degree: "BSc Computer Science"
+    institution: "University of Liverpool"
+    period: "2023–2025"
+    location: "Liverpool, UK"
+  - degree: "Information and Computing Science"
+    institution: "Xi’an Jiaotong–Liverpool University"
+    period: "2021–2023"
+    location: "Suzhou, China"
+    note: "Completed the first two years before transferring to the University of Liverpool."
+
+research_experience:
+  lab: "Cognitive Robotics Lab (CoRoLab)"
+  institution: "The University of Manchester"
+  period: "2025–2026"
+  pi: "Prof. Angelo Cangelosi"
+  focus: "Embodied intelligence and spatial reasoning"
+  description: "At CoRoLab, I worked on embodied AI and spatial reasoning, with projects spanning multimodal robot understanding, object navigation, and robot learning."
+  thanks: "I am especially grateful to Dr. Fangjun Li and Dr. Zhegong Shangguan for their guidance and mentorship."
+
+research_interests:
+  - title: "World Model"
+    description: "Humans enter the world with instincts shaped by hundreds of millions of years of evolution. We move, perceive, and interact with the physical world so naturally that we rarely question how much prior knowledge these abilities rely on. For robots, the same world is far less forgiving. It is uncertain, dynamic, and often difficult to predict. To understand it, robots must learn through vision, touch, and sound; to act within it, they must learn from successful behaviour, experience, and failure. In this sense, a robot is much like a newborn child—gradually discovering the structure of the physical world through perception, interaction, and learning."
+    keywords: "Perception · Spatial Reasoning · VLM/VLA · World Models"
+  - title: "Reinforcement Learning"
+    description: "Learning through trial and error, an agent gradually turns clumsy exploration into purposeful behaviour. Every rollout is a gamble, every reward a signal, and every convergence feels like a small miracle."
+    keywords: "PPO · DQN · Robot Learning"
+
+interests:
+  - "Volleyball"
+  - "Strength training"

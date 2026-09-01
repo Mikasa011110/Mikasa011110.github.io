@@ -157,3 +157,6 @@ GitHub Pages will run Jekyll automatically.
 - Responsive mobile layout
 - Light/dark theme
 - Future Chinese version supported without redesigning the site
+
+### Volleyball video
+The Liverpool volleyball clip is encoded as H.264/AAC with `faststart` for broad browser compatibility. It is intentionally displayed as a 9:16 portrait clip rather than stretched into a landscape frame.

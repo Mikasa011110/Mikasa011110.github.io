@@ -2,111 +2,173 @@
 layout: default
 ---
 <article class="volleyball-page">
-  <section class="vb-hero">
-    <div class="vb-hero-shade"></div>
-    <div class="container vb-hero-inner">
-      <a class="vb-back" href="{{ '/' | relative_url }}#outside-research">← Back to home</a>
-      <div class="vb-hero-copy">
-        <p class="vb-kicker">Volleyball profile · 2015–2025</p>
-        <h1>A decade<br>on court.</h1>
-        <p class="vb-hero-lead">From my first training session in Nanjing to university first-team volleyball in Liverpool—a journey shaped by leadership, teamwork, and the joy of competition.</p>
-        <div class="vb-position-row" aria-label="Playing positions">
-          <span><small>Primary role</small>Outside Hitter · 小主攻</span>
-          <span><small>Also play</small>Libero · 自由人</span>
+  <section class="vb-intro">
+    <div class="container vb-intro-grid">
+      <div class="vb-intro-copy">
+        <a class="back-link vb-back-link" href="{{ '/' | relative_url }}#outside-research">← Back to home</a>
+        <p class="section-kicker">Beyond research · Volleyball</p>
+        <h1>Volleyball has been part of my life for a decade.</h1>
+        <p class="vb-lead">
+          I started playing at school in Nanjing and kept carrying the sport with me through university in Suzhou and Liverpool.
+          The teams changed, but what drew me back to the court stayed the same: timing, trust, communication, and the feeling of six people learning to move as one.
+        </p>
+
+        <div class="vb-facts" aria-label="Volleyball overview">
+          <div>
+            <span>Playing since</span>
+            <strong>2015</strong>
+          </div>
+          <div>
+            <span>Positions</span>
+            <strong>Outside Hitter · Libero</strong>
+          </div>
+          <div>
+            <span>Places</span>
+            <strong>Nanjing · Suzhou · Liverpool</strong>
+          </div>
         </div>
       </div>
-      <div class="vb-scroll-cue" aria-hidden="true"><span></span>Career timeline</div>
+
+      <figure class="vb-intro-figure">
+        <img src="{{ '/volleyball/hero.jpg' | relative_url }}" alt="Volleyball memory from my time on court">
+        <figcaption>More than a hobby — a constant through different schools, cities, and stages of life.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="vb-story">
+  <section class="section vb-why">
+    <div class="container vb-why-grid">
+      <div>
+        <p class="section-kicker">Why I play</p>
+        <h2>A game of reading, reacting, and trusting.</h2>
+      </div>
+      <div class="vb-why-copy">
+        <p>
+          Volleyball is fast, collective, and unforgiving of hesitation. A point can change in a fraction of a second, and no player can control the rally alone.
+          I enjoy that dependence on awareness and teamwork: reading the court, making a decision, and trusting the next touch.
+        </p>
+        <p>
+          Over the years, the sport also became a way to meet people and stay grounded outside study and research.
+          Some of my strongest memories are not individual points, but the routines around them — training together, competing together, and learning how different teammates communicate under pressure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tinted vb-journey-section">
     <div class="container">
-      <header class="vb-section-heading">
-        <p class="vb-kicker">My volleyball journey</p>
-        <h2>Teams, leadership,<br>and competition.</h2>
-      </header>
+      <div class="section-heading vb-section-heading">
+        <div>
+          <p class="section-kicker">My journey</p>
+          <h2>Four stages, one sport.</h2>
+        </div>
+        <p class="section-lead">A short timeline of the teams and places that shaped my experience on court.</p>
+      </div>
 
-      <div class="vb-timeline">
-        <article class="vb-entry vb-entry-opening">
-          <div class="vb-year"><span>01</span>2015–2016</div>
-          <div class="vb-entry-copy">
-            <p class="vb-school">Nanjing Foreign Language School</p>
-            <h3>Where it started</h3>
-            <p>I first encountered volleyball in 2015 at Nanjing Foreign Language School. One year later, I became captain of the school men’s volleyball team—the beginning of a long relationship with the sport and with on-court leadership.</p>
-          </div>
-          <div class="vb-opening-mark" aria-hidden="true"><strong>10</strong><span>years<br>on court</span></div>
-        </article>
-
-        <article class="vb-entry">
-          <div class="vb-year"><span>02</span>2017–2021</div>
-          <div class="vb-entry-media">
-            <img src="{{ '/volleyball/南外仙林.jpg' | relative_url }}" alt="Playing volleyball for Nanjing Foreign Language School Xianlin Campus">
-          </div>
-          <div class="vb-entry-copy">
-            <p class="vb-school">NFLS Xianlin Campus</p>
-            <h3>Captain through the school years</h3>
-            <p>I served as team captain at Nanjing Foreign Language School Xianlin Campus from 2017 to 2021. Between 2016 and 2021, I competed each year in the Nanjing Sunshine Sports Volleyball Competition.</p>
-            <p class="vb-detail">Captain · Nanjing Sunshine Sports competitor</p>
+      <div class="vb-journey">
+        <article class="vb-stage vb-stage-text">
+          <div class="vb-stage-index">01</div>
+          <div class="vb-stage-content">
+            <p class="vb-period">2015–2016</p>
+            <h3>Nanjing Foreign Language School</h3>
+            <p>
+              I first started playing volleyball in 2015. The following year, I became captain of the school men’s team.
+              It was my first experience of discovering how much a team depends on communication as much as individual technique.
+            </p>
           </div>
         </article>
 
-        <article class="vb-entry vb-entry-reverse">
-          <div class="vb-year"><span>03</span>2021–2023</div>
-          <div class="vb-entry-media">
-            <img src="{{ '/volleyball/XJTLU.jpg' | relative_url }}" alt="XJTLU volleyball team group photo">
+        <article class="vb-stage">
+          <div class="vb-stage-index">02</div>
+          <div class="vb-stage-media">
+            <img src="{{ '/volleyball/nfls-xianlin.jpg' | relative_url }}" alt="Volleyball at Nanjing Foreign Language School Xianlin Campus" loading="lazy">
           </div>
-          <div class="vb-entry-copy">
-            <p class="vb-school">Xi’an Jiaotong–Liverpool University</p>
-            <h3>Leading at university</h3>
-            <p>At XJTLU, I served as Head of the Teaching Department and captain of the men’s volleyball team, helping organise training while continuing to compete alongside the team.</p>
-            <p class="vb-detail">Teaching Department Head · Men’s team captain</p>
+          <div class="vb-stage-content">
+            <p class="vb-period">2017–2021</p>
+            <h3>NFLS Xianlin Campus</h3>
+            <p>
+              I continued playing throughout my secondary-school years and served as team captain.
+              During this period, I regularly competed in the Nanjing Sunshine Sports Volleyball Competition and built the habits of training, preparation, and team responsibility that stayed with me later.
+            </p>
           </div>
         </article>
 
-        <article class="vb-entry vb-entry-video">
-          <div class="vb-year"><span>04</span>2023–2025</div>
-          <div class="vb-entry-media">
-            <video controls playsinline preload="metadata" aria-label="University of Liverpool volleyball match footage">
-              <source src="{{ '/volleyball/Liverpool.mp4' | relative_url }}" type="video/mp4">
+        <article class="vb-stage vb-stage-reverse">
+          <div class="vb-stage-index">03</div>
+          <div class="vb-stage-media">
+            <img src="{{ '/volleyball/xjtlu.jpg' | relative_url }}" alt="Volleyball team at Xi’an Jiaotong–Liverpool University" loading="lazy">
+          </div>
+          <div class="vb-stage-content">
+            <p class="vb-period">2021–2023</p>
+            <h3>Xi’an Jiaotong–Liverpool University</h3>
+            <p>
+              At XJTLU, I played for the men’s volleyball team and served as captain.
+              I also helped organise training and instruction within the club, which gave me a different perspective on how a team grows beyond match day.
+            </p>
+          </div>
+        </article>
+
+        <article class="vb-stage vb-stage-video">
+          <div class="vb-stage-index">04</div>
+          <div class="vb-stage-media">
+            <video controls playsinline preload="metadata" aria-label="University of Liverpool volleyball footage">
+              <source src="{{ '/volleyball/liverpool.mp4' | relative_url }}" type="video/mp4">
               Your browser does not support embedded video.
             </video>
           </div>
-          <div class="vb-entry-copy">
-            <p class="vb-school">University of Liverpool</p>
-            <h3>First-team volleyball</h3>
-            <p>From 2023 to 2025, I played for the University of Liverpool men’s first team, continuing my development in a new competitive environment in the UK.</p>
-            <p class="vb-detail">Men’s first team player</p>
+          <div class="vb-stage-content">
+            <p class="vb-period">2023–2025</p>
+            <h3>University of Liverpool</h3>
+            <p>
+              Moving to the UK meant joining a new team and adapting to a different playing environment.
+              I played for the University of Liverpool men’s first team for two seasons, which became one of the most memorable parts of my undergraduate years.
+            </p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="vb-roles">
-    <div class="container vb-roles-grid">
-      <div class="vb-roles-heading">
-        <p class="vb-kicker">On the court</p>
-        <h2>Two positions.<br>One reading of the game.</h2>
+  <section class="section vb-oncourt">
+    <div class="container vb-oncourt-grid">
+      <div class="vb-oncourt-copy">
+        <p class="section-kicker">On the court</p>
+        <h2>Two positions, two ways of seeing the rally.</h2>
+        <p>
+          I have spent most of my time as an outside hitter, while also playing libero.
+          I enjoy the contrast: one role asks me to contribute across serve receive, transition, and attack; the other places even more emphasis on reading the game and keeping the next touch possible.
+        </p>
       </div>
-      <article class="vb-role-card">
-        <span class="vb-role-number">04</span>
-        <p>Primary position</p>
-        <h3>Outside Hitter <small>小主攻</small></h3>
-        <p>Serve receive, transition, coverage, and attacking from the left side.</p>
-      </article>
-      <article class="vb-role-card vb-role-card-accent">
-        <span class="vb-role-number">L</span>
-        <p>Second position</p>
-        <h3>Libero <small>自由人</small></h3>
-        <p>Reading the attack, organising the back court, and keeping the rally alive.</p>
-      </article>
+
+      <div class="vb-role-list">
+        <article class="vb-role">
+          <span>01</span>
+          <div>
+            <h3>Outside Hitter</h3>
+            <p>Serve receive · transition · left-side attack · coverage</p>
+          </div>
+        </article>
+        <article class="vb-role">
+          <span>02</span>
+          <div>
+            <h3>Libero</h3>
+            <p>Reading attacks · back-court organisation · first-contact quality</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="vb-closing">
+  <section class="vb-reflection">
     <div class="container narrow">
-      <p>“The best point is always the next one.”</p>
-      <a href="{{ '/' | relative_url }}#outside-research">← Return to outside research</a>
+      <p class="section-kicker">What stays with me</p>
+      <blockquote>
+        The best rallies are rarely the work of one person. They are built one touch at a time, with each player making the next action possible.
+      </blockquote>
+      <p class="vb-reflection-note">
+        That is probably what I value most about volleyball: it rewards awareness, adaptability, and trust — qualities that remain useful far beyond the court.
+      </p>
+      <a class="text-arrow" href="{{ '/' | relative_url }}#outside-research">Back to home →</a>
     </div>
   </section>
 </article>

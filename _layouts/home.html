@@ -104,19 +104,32 @@ layout: default
 </section>
 
 <section class="section" id="outside-research">
-  <div class="container interests-row">
-    <div>
-      <p class="section-kicker">Personal</p>
-      <h2>{{ t.sections.interests }}</h2>
+  <div class="container">
+    <div class="section-heading personal-heading">
+      <div>
+        <p class="section-kicker">Beyond research</p>
+        <h2>{{ t.sections.interests }}</h2>
+      </div>
+      <p class="section-lead">A few things that keep me moving when I am away from the lab.</p>
     </div>
-    <div class="hobby-list">
-      {% for item in p.interests %}
-        {% if item == 'Volleyball' %}
-        <a href="{{ '/volleyball/' | relative_url }}" aria-label="Learn more about my interest in volleyball">{{ item }} <span aria-hidden="true">↗</span></a>
-        {% else %}
-        <span>{{ item }}</span>
-        {% endif %}
-      {% endfor %}
+
+    <div class="personal-interest-grid">
+      <a class="personal-interest-card personal-interest-link" href="{{ '/volleyball/' | relative_url }}" aria-label="Read my volleyball story">
+        <span class="personal-interest-index">01</span>
+        <div>
+          <h3>Volleyball</h3>
+          <p>Playing since 2015, from school teams in Nanjing to the University of Liverpool men's first team.</p>
+        </div>
+        <span class="personal-interest-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <article class="personal-interest-card">
+        <span class="personal-interest-index">02</span>
+        <div>
+          <h3>Strength training</h3>
+          <p>Training for consistency, recovery, and the simple satisfaction of getting a little stronger over time.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>

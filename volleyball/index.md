@@ -1,7 +1,8 @@
 ---
 layout: volleyball
+nav: volleyball
 lang: en
 title: Volleyball
-description: "Kanwei He's volleyball career from Nanjing Foreign Language School to the University of Liverpool men's first team."
+description: "A personal volleyball story spanning school and university teams in Nanjing, Suzhou, and Liverpool."
 permalink: /volleyball/
 ---
